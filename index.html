@@ -7,6 +7,36 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <h1>Deli-Flow Solution</h1>
+    <h2>Response to Chegg</h2>
+
+    <p>
+      The Chegg Expert answers a different question than the one posed by the scanned problem.  There is a typed in question at the top that provides the maximum production of the shop (and doesn’t ask us to compute it), and only asks how to make the production more efficient where it takes 8 minutes to make each sandwich instead of 10 minutes.  In this context, the Chegg answer would be correct even though each associate would be waiting around an average of 6 minutes 24 seconds per order for their next task or an average of 480 minutes per shift (Time to make 75 sandwiches = 75 * 8 = 600 minutes, Total manpower minutes purchased = 5 * 600 = 3000 minutes  =>  Average employee utilization per shift =  600 / 5 = 120 minutes, Average idle time per employee per shift = 600 – 120 = 480 minutes, Average idle time per employee per order = 480 / 75 = 6.4 minutes). 
+    </p>
+
+    <p>
+      The scanned problem is different because it only defines a process and a demand that the shop has: 60 sandwiches per day on average.  Because it is an average, we can assume that on some days it could be less, and some days it could be more, but if we add up all the sandwiches ordered in a year and divide it by 365 or 366 (if it is a leap year) we would get around 60 sandwiches ordered per day.  The owner is thinking of expanding and wonders if it could be done with the employees and the process that they have.  It is our job to figure that out.  The solution to that one was given by me in the comments above (i.e., presented in abbreviated form on the Chegg website and in full below this response) and the answer to that is the shop can make 139 sandwiches per day (in a 10-hour shift) with the process as given. 
+    </p>
+
+    <p>
+      It is unclear who the author of the scanned problem is.  However, some companies may decide to use this question during technical interviews.  I got this question twice in the same company (different interviewers) with two different winning answers: 139 and 60.  If the interviewer adds the specification that each employee must wait for one entire order to complete before doing their next task, then 60 sandwiches is the maximum the shop can produce and the only way to expand is to decrease the amount of minutes that it takes to make each sandwich via the enhancements that the Chegg Expert proposed.  But the answer is 139 if the problem is left as given, as each employee works on their next task as soon as it becomes available for them to do (no breaks), and the shop itself can work on more than one order at a time in this assembly line process.  Productivity improvements (outside of lowering the amount of time that is spent on taking an order – such as online ordering and Subway style order taking) would come in the form of distributing work more equitably across employees, utilizing the toaster oven more efficiently, and buying another toaster oven.  These improvements work not by decreasing the amount of time that it takes to make one sandwich, but by lowering the takt time for process, so that the next sandwich can be output in a smaller amount of time.  It is best for prepared interviewees to present both answers, to see what the interviewer is seeking.
+    </p>
+
+    <p>
+      Due to my interview experience, I have written up an answer of the scanned problem, and how some process improvements for this shop would work: 
+    </p>
+
+    <ul>
+      <li>Original scanned problem</li>
+      <li>My solution</li>
+      <li>Spreadsheet illustrating the given process</li>
+      <li>Spreadsheet illustrating improved processes</li>
+    </ul>
+
+    <p>
+      - Jeremiah R. Tabb 
+    </p>
+
     <script src="script.js"></script>
   </body>
 </html>
